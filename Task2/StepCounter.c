@@ -217,7 +217,7 @@ int main() {
             char time[6];
             char steps_char[1000];
             int steps[1000];
-            int meansteps;
+            float meansteps;
             int sumsteps;
             int linecount = 0;
 
@@ -231,8 +231,9 @@ int main() {
             }
 
             meansteps = sumsteps / linecount;
-            printf("Mean step count: %d\n", meansteps);
+            printf("Mean step count: %.0f\n", meansteps);
             sumsteps = 0;
+            
             break;
 
         case 'F':
